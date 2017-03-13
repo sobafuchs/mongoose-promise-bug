@@ -5,4 +5,4 @@
 1) `node .` or `npm start`
 
 ### tests
-1) `npm run test`
+1) `npm run test-mocha` to test with mocha

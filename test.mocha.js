@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const co = require('co');
+mongoose.Promise = global.Promise;
+
 const DB = `mongoose-promise-bug`;
 const db = mongoose.connect(`mongodb://localhost:27017/${ DB }`);
 const models = require('./models');
