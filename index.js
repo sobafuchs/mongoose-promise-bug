@@ -30,4 +30,5 @@ function test() {
   return models.Parent.remove({})
     .then(() => models.Parent.create({ name: 'Parent Doc' }))
     .then(parent => models.Child.create({ parent: parent._id, name: 'Child Doc'}))
+    .then(child => child.save());
 }
