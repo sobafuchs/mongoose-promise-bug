@@ -1,6 +1,13 @@
 {
+  "scripts": {
+    "start": "node .",
+    "test-mocha": "mocha test.mocha.js"
+  },
   "dependencies": {
     "co": "^4.6.0",
     "mongoose": "^4.8.7"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
   }
 }

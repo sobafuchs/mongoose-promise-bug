@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const co = require('co');
+mongoose.Promise = global.Promise
+
 // CONSTANTS
 const GITHUB_ISSUE = `gh-mongoose-promise-bug`;
 
